@@ -1,0 +1,115 @@
+body{
+  background-color: rgb(9, 2, 37);
+  color: white;
+}
+/* form */
+/* Form container */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form title */
+form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form fields */
+form label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="tel"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+form textarea {
+  height: 80px;
+}
+
+form select {
+  height: 38px;
+}
+
+
+/* Submit button */
+form .submit-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+form .submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* checkbox */
+.checkbox-group div {
+  display: flex;
+  margin-right: 20px;
+}
+.checkbox-group div label{
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.edit{
+background-color:yellow;
+margin-right: 15px;
+}
+.delete{
+  background-color: red;
+}
+.edit,.delete{
+  width: 80px;
+  height: 35px;
+  border-radius: 5px;
+  color: rgb(11, 9, 42);
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+}
+.edit:hover,.delete:hover{
+  transform: scale(1.1);
+}
+/* table */
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: #1f918f;
+  }

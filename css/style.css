@@ -1,0 +1,357 @@
+/* inputting background image and change the color of font */
+body{
+    background-color: rgba(15, 17, 46, 0.925);
+   color: whitesmoke;
+}
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(13, 255, 0);
+}
+/* TO hide divs or some */
+/* .content {
+    display: none ;
+  } */
+  
+/* ----------------------------------------This is header nav bar section and includes logo, menu, register and search */
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* company logo */
+.logo img{
+    height: 100px;
+}
+/* navbar menu items */
+.nav_menu ul li{
+    display: inline;
+    padding: 10px;
+}
+/* dropdown */
+.dropdown{
+    display: inline;
+}
+
+/* register and search div */
+.register_search {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  
+  .search-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-button {
+    padding: 8px 12px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #e6e6e6;
+  }
+
+  /* drop items */
+  .ui-autocomplete {
+    position: absolute;
+    z-index: 1000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .ui-autocomplete li {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .ui-autocomplete li:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .ui-autocomplete li.ui-state-active {
+    background-color: #e6e6e6;
+  }
+  
+
+/* Main div */
+main{
+    height: 700px;
+    background-color: rgba(4, 3, 30, 0.985);
+    overflow-y: auto;
+}
+/* --------------Home Div------------------------- */
+.home_div{
+    display: block;
+}
+/* carousel images */
+.carousel-item img{
+    width: 100%;
+    height: 700px;
+}
+/* ----------------------Instructors div-------------- */
+
+.instructors_div{
+    width: 1000px;
+    height: 450px;
+    margin: auto;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px 50px;
+    flex-wrap: wrap;
+}
+/* instructors images */
+.card-img-top{
+    height: 200px;
+}
+/* ---------------------Classes Div-------------------- */
+
+.judo,.karate,.jiu_jitsu,.mway_thai{
+    /* display: none; */
+    width: 1000px;
+    margin: 50px auto;
+}
+.classes_div img{
+    width: 1000px;
+}
+.classes_div p{
+    margin: 50px 0;
+}
+/* price and membership links */
+.classes_div a{
+    display: block;
+    text-align: center;
+    margin: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+@keyframes flamePulse {
+    0% { color: #FFD700; }
+    50% { color: #ff8000; }
+    100% { color: #FFD700; }
+  }
+  
+  .flame-link {
+    animation: flamePulse 2s infinite;
+  }
+ 
+  
+  .flame-link:hover {
+    transform: scale(1.2);
+  }
+  
+  
+/* ----------------------About Us------------------ */
+.aboutus_div{
+    /* display: none; */
+    width: 600px;
+    margin:auto;
+}
+/* About us image */
+.aboutus_div img{
+    padding: 50px 0;
+    width: 100%;
+    
+}
+/* ----------------------Contact Us----------------- */
+
+.contactus_div{
+    margin: 120px;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0px;
+    align-items: center;
+}
+.map-div{
+    height: 430px;
+}
+.contactus_div h2{
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+/* contact us form */
+.contactus_form{
+    height: 460px;
+    width: 350px;
+    margin-right: 0;
+}
+/* google map api */
+.map_api{
+    width: 350px;
+    height: 150px;
+    margin: 10px 0 20px 0;
+    border-radius: 20px;
+}
+.contactus-btn{
+    margin-top: 35px;
+}
+/* ------------------Privacy and Policy------------- */
+.privacy_div{
+    /* display: none; */
+    width: 600px;
+    margin:auto;
+}
+.privacy_div h2{
+    margin: 50px 0;
+    text-align: center;
+    text-decoration: underline;
+}
+/* ---------------Time Table--------------- */
+
+.time_table h2{
+    margin: 100px 0 50px 0;
+    text-align: center;
+    text-decoration: underline;
+}
+/* ----------------Prices and membership options--------- */
+
+.member_options h2{
+    text-align: center;
+    text-decoration: underline;
+    margin: 50px 0;
+}
+/* -----------------site map----------------- */
+.site_map h2{
+    margin-top: 50px;
+    text-align: center;
+    text-decoration: underline;
+
+}
+.sitemap_links_container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    margin: 100px;
+}
+/* -----------Register Page------------ */
+ /* Form container */
+ form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Form title */
+  form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  /* Form fields */
+  form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="number"],
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+  }
+
+  form textarea {
+    height: 80px;
+  }
+
+  form select {
+    height: 38px;
+  }
+
+
+  /* Submit button */
+  form .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+
+  form .submit-btn:hover {
+    background-color: #45a049;
+  }
+
+  /* checkbox */
+  .checkbox-group div {
+    display: flex;
+    margin-right: 20px;
+  }
+  .checkbox-group div label{
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+/* ---------------thank you page--------------------- */
+.thankyou{
+    width: 100%;
+    /* height: 95%; */
+   text-align: center;
+   font-family: cursive;
+}
+.thankyou h2{
+    font-size: 6.5em;
+    margin: 250px 0 50px 0;  
+}
+.thankyou p{
+    font-size: 2em;
+}
+/*------------------------------------ footer section including social media links and sitemap, policy */
+footer{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* social links */
+svg{
+
+    margin: 20px;
+}
+svg:hover{
+    filter: brightness(0.5);
+    transform: scale(1.5);
+}
+/* sitemap and privacy links */
+.sitemap_policy a{
+    margin: 20px;
+}
+/* ------------------------------------------------------ */
